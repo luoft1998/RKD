@@ -169,7 +169,7 @@ def eval(net, loader, ep):
 
     test_iter.set_description("[Eval][Epoch %d]" % ep)
     with torch.no_grad():
-      if __name__ == '__main__':
+     
         for images, labels in test_iter:
             images, labels = images.cuda(), labels.cuda()
             embedding = net(images)
